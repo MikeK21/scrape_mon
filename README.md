@@ -29,3 +29,17 @@ The docker image can be built with the following once the dockerfile file is cre
 Ater the build completes, you can run the container and the script therein with:
 
 	docker run scrape_mon
+
+Other general troubleshooting steps
+
+# Pull Docker Images
+
+	docker images
+
+# Inspect Docker Container
+	
+	docker inspect $container_id
+
+# Jump into container
+
+	docker exec -it $container_id -- /bin/bash
