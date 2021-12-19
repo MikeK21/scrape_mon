@@ -66,13 +66,13 @@ def getUserRequest():
 def getEnvRequest():
     
     try:
-        os.environ['STOCKSYMBOL'] = "MSFT"
+        #os.environ['STOCKSYMBOL'] = "MSFT"
         stockSymbol = os.getenv("STOCKSYMBOL")
     except:
         print("Could not get stock symbol")
         
     try:
-        os.environ['NDAYS'] = "3"
+       # os.environ['NDAYS'] = "3"
         nDays = os.getenv("NDAYS")
     except:
         print("Could not get days to look up")
