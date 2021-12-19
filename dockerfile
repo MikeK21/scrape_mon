@@ -4,6 +4,5 @@ ENV STOCKSYMBOL "MSFT"
 ENV NDAYS "3"
 
 ADD scrape_mon.py /
-ADD simple_server.py /
 
-CMD [ "python", "./scrape_mon.py" ]
+CMD [ "python3", "./scrape_mon.py" ]

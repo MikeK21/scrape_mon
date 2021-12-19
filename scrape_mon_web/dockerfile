@@ -1,0 +1,11 @@
+FROM python:3
+
+ENV STOCKSYMBOL "MSFT"
+ENV NDAYS "3"
+EXPOSE 8080
+
+WORKDIR /
+ADD scrape_mon.py /
+ADD simple_serverv2.py /
+
+CMD [ "python3", "./simple_serverv2.py" ]
